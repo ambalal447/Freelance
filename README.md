@@ -31,35 +31,6 @@ cp .env.example .env
 npm test
 ```
 
-
-## Android-only workflow
-
-You can run the current project without a laptop by using **GitHub Codespaces** from an Android browser:
-
-1. Open the repository on GitHub.
-2. Tap **Code** → **Codespaces** → **Create codespace**.
-3. In the Codespaces terminal, run:
-
-```bash
-npm install
-cp .env.example .env
-npm test
-```
-
-Alternatively, you can use **Termux** on Android:
-
-```bash
-pkg update
-pkg install git nodejs
-git clone <your-repository-url>
-cd <your-repository-folder>
-npm install
-cp .env.example .env
-npm test
-```
-
-The current phase is a tested TypeScript marketplace core. It does not yet include a browser UI or `npm run dev`; adding the Next.js web app/API adapter is the next phase.
-
 ## Scripts
 
 - `npm run typecheck` — strict TypeScript validation.
